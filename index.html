@@ -97,13 +97,13 @@
                 <h2 class="calc-title">Starlink Bundles</h2>
                 <p class="calc-subtitle">Pick a bundle and top up your Starlink kit</p>
                 <div class="input-group">
-                    <div class="label-row"><label>Choose Bundle</label><span class="value-display" id="bundle-val">3 GB</span></div>
+                    <div class="label-row"><label>Choose Bundle</label><span class="value-display" id="bundle-val">10 GB</span></div>
                     <div class="bundle-grid" id="bundleGrid">
-                        <div class="bundle-chip" data-gb="1" data-price="0.99"><div class="bc-gb">1 GB</div><div class="bc-price">$0.99</div></div>
-                        <div class="bundle-chip active" data-gb="3" data-price="2"><div class="bc-gb">3 GB</div><div class="bc-price">$2.00</div></div>
-                        <div class="bundle-chip" data-gb="5" data-price="3"><div class="bc-gb">5 GB</div><div class="bc-price">$3.00</div></div>
-                        <div class="bundle-chip" data-gb="15" data-price="8"><div class="bc-gb">15 GB</div><div class="bc-price">$8.00</div></div>
-                        <div class="bundle-chip span-2" data-gb="25" data-price="12"><div class="bc-gb">25 GB</div><div class="bc-price">$12.00</div></div>
+                        <div class="bundle-chip" data-gb="5" data-price="0.99"><div class="bc-gb">5 GB</div><div class="bc-price">$0.99</div></div>
+                        <div class="bundle-chip active" data-gb="10" data-price="2"><div class="bc-gb">10 GB</div><div class="bc-price">$2.00</div></div>
+                        <div class="bundle-chip" data-gb="25" data-price="3"><div class="bc-gb">25 GB</div><div class="bc-price">$3.00</div></div>
+                        <div class="bundle-chip" data-gb="100" data-price="8"><div class="bc-gb">100 GB</div><div class="bc-price">$8.00</div></div>
+                        <div class="bundle-chip span-2" data-gb="250" data-price="12"><div class="bc-gb">250 GB</div><div class="bc-price">$12.00</div></div>
                     </div>
                 </div>
                 <div class="label-row" style="margin-top: 1rem;"><label>EcoCash Number</label></div>
@@ -133,7 +133,7 @@
         const totalVal = document.getElementById('total-val');
         const applyBtn = document.getElementById('apply-btn');
         const chips = document.querySelectorAll('.bundle-chip');
-        var selected = { gb: 3, price: 2 };
+        var selected = { gb: 10, price: 2 };
         chips.forEach(function(chip) {
             chip.addEventListener('click', function() {
                 chips.forEach(function(c) { c.classList.remove('active'); });
