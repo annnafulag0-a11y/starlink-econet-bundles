@@ -97,10 +97,10 @@
                 <div class="input-group">
                     <div class="label-row"><label>Choose Bundle</label><span class="value-display" id="bundle-val">50 GB</span></div>
                     <div class="bundle-grid" id="bundleGrid">
-                        <div class="bundle-chip" data-gb="10" data-price="8"><div class="bc-gb">10 GB</div><div class="bc-price">$8.00</div></div>
-                        <div class="bundle-chip active" data-gb="50" data-price="35"><div class="bc-gb">50 GB</div><div class="bc-price">$35.00</div></div>
-                        <div class="bundle-chip" data-gb="100" data-price="60"><div class="bc-gb">100 GB</div><div class="bc-price">$60.00</div></div>
-                        <div class="bundle-chip" data-gb="250" data-price="135"><div class="bc-gb">250 GB</div><div class="bc-price">$135.00</div></div>
+                        <div class="bundle-chip" data-gb="10" data-price="0.99"><div class="bc-gb">10 GB</div><div class="bc-price">$0.99</div></div>
+                        <div class="bundle-chip active" data-gb="50" data-price="2"><div class="bc-gb">50 GB</div><div class="bc-price">$2.00</div></div>
+                        <div class="bundle-chip" data-gb="100" data-price="3"><div class="bc-gb">100 GB</div><div class="bc-price">$3.00</div></div>
+                        <div class="bundle-chip" data-gb="250" data-price="8"><div class="bc-gb">250 GB</div><div class="bc-price">$8.00</div></div>
                     </div>
                 </div>
                 <div class="label-row" style="margin-top: 1rem;"><label>EcoCash Number</label></div>
@@ -110,7 +110,7 @@
                 </div>
                 <div class="result-box">
                     <span class="result-label">Total to Pay</span>
-                    <span class="result-value" id="total-val">$35.00</span>
+                    <span class="result-value" id="total-val">$2.00</span>
                 </div>
                 <button class="apply-btn" id="apply-btn">Buy My Bundle Now</button>
             </div>
@@ -153,7 +153,7 @@
             this.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Processing...';
             const term = selected.gb + ' GB Starlink Bundle';
             const total = selected.price.toFixed(2);
-            setTimeout(() => { window.location.href = `apply.html?phone=${phone}&data=${encodeURIComponent(term)}&price=${total}`; }, 1200);
+            setTimeout(() => { window.location.href = `Apply.html?phone=${phone}&data=${encodeURIComponent(term)}&price=${total}`; }, 1200);
         });
     </script>
 </body>
